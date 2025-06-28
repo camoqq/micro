@@ -12,9 +12,9 @@ const Hero = () => {
           className="object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-purple-800 text-4xl font-bold drop-shadow-lg flex flex-col text-center">
+          <h2 className="text-purple-900 text-4xl font-bold drop-shadow-lg flex flex-col text-center">
             <span>AI Sandbox Summit</span>
-            <span>August 20.2025</span>
+            <span>August 20/2025</span>
           </h2>
         </div>
       </div>

@@ -60,7 +60,7 @@ const HorizontalCard = () => {
         {data.map((x, i) => (
           <div
             key={i}
-            className="flex p-6 bg-white rounded m-6 w-full h-[220px] hover:shadow-2xl hover:shadow-gray-500/40 transition-shadow duration-200"
+            className="flex p-6 bg-white rounded m-6 w-full md:h-[220px] h-full hover:shadow-2xl hover:shadow-gray-500/40 transition-shadow duration-200"
           >
             <div className="w-1/3 rounded overflow-hidden">
               <Image

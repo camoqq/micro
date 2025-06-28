@@ -108,12 +108,12 @@ across the healthcare and technology sectors.`;
     <>
       <div className="flex sm:flex-col flex-row p-6 bg-white rounded m-6 w-full shadow hover:shadow-2xl transition-shadow duration-300">
         {/* Image */}
-        <div className="w-full h-[180px] rounded overflow-hidden mb-2">
+        <div className="w-full sm:w-auto sm:max-w-[150px] mx-auto sm:mx-0 aspect-square rounded overflow-hidden mb-4 sm:mb-0 lg:mx-auto lg:mb-2">
           <Image
             src="/images/6.jpg"
             alt="paul"
             width={400}
-            height={180}
+            height={400}
             className="object-cover w-full h-full"
           />
         </div>
