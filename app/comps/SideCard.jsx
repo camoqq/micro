@@ -130,20 +130,40 @@ across the healthcare and technology sectors.`;
         </div>
       </div>
 
-      {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-gray-300 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg max-w-md w-full max-h-[80vh] overflow-y-auto">
-            <h2 className="text-lg font-semibold mb-2">About Paul</h2>
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white  border-4 border-gray-600 p-6 rounded-lg max-w-xl w-full max-h-[90vh] overflow-y-auto relative mx-6">
+            {/* Top Row: Image, Title, Close Button */}
+            <div className="flex flex-row items-center justify-between gap-y-4 md:gap-x-6 mb-4">
+              {/* Image */}
+              <div className="w-28 h-28 rounded overflow-hidden flex-shrink-0">
+                <Image
+                  src="/images/6.jpg"
+                  alt="Paul"
+                  width={112}
+                  height={112}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+
+              {/* Title */}
+              <h2 className="text-lg font-semibold text-gray-800 text-center md:text-left">
+                About Paul
+              </h2>
+
+              {/* Close Button */}
+              <button
+                onClick={() => setShowModal(false)}
+                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+              >
+                Close
+              </button>
+            </div>
+
+            {/* Full Description */}
             <p className="text-sm text-gray-700 whitespace-pre-line">
               {fullDesc}
             </p>
-            <button
-              onClick={() => setShowModal(false)}
-              className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-            >
-              Close
-            </button>
           </div>
         </div>
       )}
