@@ -16,22 +16,28 @@ export default function Home() {
           <div className="flex flex-col gap-6">
             <div className="w-full  rounded overflow-hidden mb-2 ml-6">
               <Image
-                src="/images/summit.png"
+                src="/images/conference.jpg"
                 alt="paul"
                 width={400}
                 height={180}
                 className="object-cover w-full h-full"
               />
             </div>
-            <div className="w-full  rounded overflow-hidden mb-2 ml-6">
-              <Image
-                src="/images/eva.png"
-                alt="paul"
-                width={400}
-                height={180}
-                className="object-cover w-full h-full"
-              />
+            <div>
+              <div className="bg-white ml-6 w-full rounded-t">
+                <h2 className="text-lg text-center p-1 font-bold">Meet EVA</h2>
+              </div>
+              <div className="w-full  rounded-b overflow-hidden mb-2 ml-6">
+                <Image
+                  src="/images/eva.jpg"
+                  alt="paul"
+                  width={400}
+                  height={180}
+                  className="object-cover w-full h-full"
+                />
+              </div>
             </div>
+
             <div className="w-full rounded overflow-hidden mb-6 ml-6">
               <Image
                 src="/images/register.png"

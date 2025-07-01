@@ -120,44 +120,8 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-
-const data = [
-  {
-    image: "/images/1.png",
-    tag: ["#FunctionalMedicine", "#AIInWellcare"],
-    Title: "A $10,000 AI System for Just $697",
-    Date: "Vishu • June 19, 2025",
-    Desc: "The System that's shaking up functional and integrative medicine...",
-  },
-  {
-    image: "/images/3.jpg",
-    tag: ["#AIFortHealers", "#FunctionalFuture"],
-    Title: "AI Has Ignored Holistic Healers Until Now",
-    Date: "Paul • June 21, 2025",
-    Desc: "Why Doctors & Nurses are finally getting their tools...",
-  },
-  {
-    image: "/images/2.png",
-    tag: ["#VirtualCareTeam", "#AICompanions"],
-    Title: "Meet Your Wellcare Team",
-    Date: "Paul • June 21, 2025",
-    Desc: "EVA, Candise & Gwen. Built by functional, Integrative & lifestyle medicine practicioners...",
-  },
-  {
-    image: "/images/4.png",
-    tag: ["#TrustDrivenTech", "#PractitionerBuilt"],
-    Title: "$2M Rooted In Practitioner Feedback",
-    Date: "Vishu • June 19, 2025",
-    Desc: "Hers's how we co-created a system you'll actually use...",
-  },
-  {
-    image: "/images/7.png",
-    tag: ["#WellcareAutomation", "#AIPfofitSystem"],
-    Title: "Your Revenue On Autopilot",
-    Date: "Shane • June 20, 2025",
-    Desc: "A practice model you control...",
-  },
-];
+import { marked } from "marked";
+import { data } from "./CardData";
 
 const HorizontalCard = () => {
   const [showModal, setShowModal] = useState(false);
@@ -165,6 +129,7 @@ const HorizontalCard = () => {
     image: "",
     title: "",
     desc: "",
+    FullDesc: "",
   });
 
   const openModal = (item) => {
@@ -172,6 +137,7 @@ const HorizontalCard = () => {
       image: item.image,
       title: item.Title,
       desc: item.Desc,
+      FullDesc: item.FullDesc || item.Desc,
     });
     setShowModal(true);
   };
@@ -226,9 +192,9 @@ const HorizontalCard = () => {
       {/* Modal */}
       {showModal && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-          <div className="bg-white border-4 border-gray-600  rounded p-6 max-w-md w-full relative shadow-lg overflow-y-auto max-h-[90vh]">
+          <div className="bg-white border-4 border-gray-600 rounded p-6 max-w-md w-full relative shadow-lg overflow-y-scroll max-h-[90vh] scroll-visible">
             {/* Top row: image, title, close button */}
-            <div className="flex items-center justify-between mb-4 gap-4">
+            <div className="flex items-start justify-between mb-4 gap-4">
               <div className="w-20 h-20 rounded overflow-hidden flex-shrink-0">
                 <Image
                   src={modalContent.image}
@@ -252,9 +218,12 @@ const HorizontalCard = () => {
             </div>
 
             {/* Description */}
-            <p className="text-gray-700 whitespace-pre-line">
-              {modalContent.desc}
-            </p>
+            <p
+              className="text-gray-700"
+              dangerouslySetInnerHTML={{
+                __html: marked(modalContent.FullDesc),
+              }}
+            ></p>
           </div>
         </div>
       )}

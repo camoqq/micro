@@ -1,12 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 
@@ -21,7 +16,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo or Title */}
         <h1 className="text-lg font-bold">
-          <Link href="/">H6FIT WELLCARE</Link>
+          <Link href="/">H6FIT SANDBOX SUMMIT</Link>
         </h1>
 
         {/* Desktop Menu */}
@@ -45,19 +40,19 @@ export default function Navbar() {
 
         {/* Social Icons + Subscribe (desktop) */}
         <div className="hidden md:flex items-center gap-2">
-          <Link href="https://www.linkedin.com">
+          <Link href="https://www.linkedin.com/company/h6fitventurestudio/">
             <IconLink icon={<FaLinkedin />} />
           </Link>
-          <Link href="https://www.facebook.com/">
+          <Link href="https://www.facebook.com/H6FITVentureStudio">
             <IconLink icon={<FaFacebookF />} />
           </Link>
-          <Link href="https://www.youtube.com">
-            <IconLink icon={<FaYoutube />} />
+          <Link href="https://www.tiktok.com/@h6fit">
+            <IconLink icon={<FaTiktok />} />
           </Link>
-          <Link href="https://www.x.com">
+          <Link href="https://x.com/H6FITVentStudio">
             <IconLink icon={<FaSquareXTwitter />} />
           </Link>
-          <Link href="https://www.instagram.com">
+          <Link href="https://www.instagram.com/h6fitventurestudio">
             <IconLink icon={<FaInstagram />} />
           </Link>
           <button className="bg-white text-black rounded px-3 py-1 ml-2 text-sm">
@@ -67,7 +62,7 @@ export default function Navbar() {
 
         {/* Hamburger (mobile only) */}
         <div className="md:hidden ">
-          <button onClick={toggleMenu} className="hover:cursor-pointer">
+          <button onClick={() => toggleMenu()} className="hover:cursor-pointer">
             {isOpen ? <HiX size={24} /> : <HiOutlineMenu size={24} />}
           </button>
         </div>
@@ -95,19 +90,19 @@ export default function Navbar() {
             <li></li>
           </ul>
           <div className="flex gap-2 mt-3 hover:cursor-pointer">
-            <Link href="https://www.linkedin.com">
+            <Link href="https://www.linkedin.com/company/h6fitventurestudio/">
               <IconLink icon={<FaLinkedin />} />
             </Link>
-            <Link href="https://www.facebook.com/">
+            <Link href="https://www.facebook.com/H6FITVentureStudio">
               <IconLink icon={<FaFacebookF />} />
             </Link>
-            <Link href="https://www.youtube.com">
-              <IconLink icon={<FaYoutube />} />
+            <Link href="https://www.tiktok.com/@h6fit">
+              <IconLink icon={<FaTiktok />} />
             </Link>
-            <Link href="https://www.x.com">
+            <Link href="https://x.com/H6FITVentStudio">
               <IconLink icon={<FaSquareXTwitter />} />
             </Link>
-            <Link href="https://www.instagram.com">
+            <Link href="https://www.instagram.com/h6fitventurestudio">
               <IconLink icon={<FaInstagram />} />
             </Link>
           </div>
