@@ -19,7 +19,7 @@ const SideCard = () => {
           />
         </div>
 
-        <div className="ml-4 mt-2 sm:ml-6 lg:ml-0">
+        <div className="md:ml-4 ml-0 mt-2 sm:ml-6 lg:ml-0">
           <p>
             <strong>Paul Epstein, CEO</strong>
           </p>

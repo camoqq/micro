@@ -165,12 +165,12 @@ const HorizontalCard = () => {
               />
             </div>
 
-            <div className="w-2/3 flex flex-col ml-4 justify-between">
+            <div className="md:w-2/3 w-full flex flex-col md:ml-4 ml:0 justify-between">
               <div className="flex flex-wrap md:gap-2 gap-1 mb-2">
                 {x.tag.map((t, j) => (
                   <span
                     key={j}
-                    className="bg-gray-100 rounded px-2 py-1 text-sm md:mt-0 mt-6"
+                    className="bg-gray-100 rounded px-2 py-1 text-sm md:mt-0 mt-3"
                   >
                     {t}
                   </span>
@@ -178,12 +178,12 @@ const HorizontalCard = () => {
               </div>
               <span className="font-bold text-lg">{x.Title}</span>
               <span className="text-sm text-gray-500">{x.Date}</span>
-              <span
-                className="text-blue-500 hover:cursor-pointer text-sm"
+              <div
+                className="text-blue-500 hover:cursor-pointer text-sm w-full"
                 onClick={() => openModal(x)}
               >
                 {x.Desc}
-              </span>
+              </div>
             </div>
           </div>
         ))}
@@ -201,7 +201,10 @@ const HorizontalCard = () => {
           >
             {/* Scrollable content wrapper with padding */}
 
-            <div className="overflow-y-scroll max-h-[75vh] pr-4 custom-scrollbar">
+            <div
+              className="overflow-y-scroll max-h-[75vh] pr-4 custom-scrollbar"
+              style={{ minHeight: "200px" }}
+            >
               {/* Your content here */}
               <div className="flex items-start justify-between mb-4 gap-4">
                 <div className="flex flex-col md:flex-row  sm:text-center text-left w-full">
