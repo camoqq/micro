@@ -1,21 +1,17 @@
-"use client"; // Ensure client-side behavior in Next.js
-
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 
 const SideCard = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const shortDesc =
-    "Paul is a pioneer in AI for holistic healing. He’s passionate about blending technology with care.";
-
   return (
     <>
-      <div className="flex sm:flex-col flex-row p-6 bg-white rounded m-6 w-full shadow hover:shadow-2xl transition-shadow duration-300">
-        {/* Image */}
+      {/* Main Card */}
+      <div className="flex flex-col md:flex-row lg:flex-col p-6 bg-white rounded m-6 w-full shadow hover:shadow-[0_8px_40px_rgba(0,0,0,0.3)] transition-shadow duration-300">
         <div className="w-full sm:w-auto sm:max-w-[150px] mx-auto sm:mx-0 aspect-square rounded overflow-hidden mb-4 sm:mb-0 lg:mx-auto lg:mb-2">
           <Image
-            src="/images/6.jpg"
+            src="/images/paul.jpg"
             alt="paul"
             width={400}
             height={400}
@@ -23,54 +19,70 @@ const SideCard = () => {
           />
         </div>
 
-        {/* Short Description + Read More Link */}
-        <div className="ml-4 sm:ml-0 mt-2">
-          <p className="text-sm text-gray-700 mb-1">{shortDesc}</p>
+        <div className="ml-4 mt-2 sm:ml-6 lg:ml-0">
+          <p>
+            <strong>Paul Epstein, CEO</strong>
+          </p>
           <button
             onClick={() => setShowModal(true)}
-            className="text-blue-500 text-sm underline hover:text-blue-700 w-fit hover:cursor-pointer"
+            className="text-blue-500 text-sm hover:text-blue-700 w-fit hover:cursor-pointer no-underline text-left"
           >
-            Read more
+            H6FIT was born from a deeply personal healing journey, one that
+            moved me through the failures of the industrial sick-care model,
+            almost killing me...
           </button>
         </div>
       </div>
 
+      {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-white border-4 border-gray-600 p-6 rounded-lg max-w-xl w-full overflow-y-scroll max-h-[90vh] scroll-visible relative mx-6">
-            {/* Top Row: Image, Title, Close Button */}
-            <div className="flex items-start flex-row  justify-between gap-y-4 md:gap-x-6 mb-4">
-              {/* Image */}
-              <div className="w-28 h-28 rounded overflow-hidden flex-shrink-0">
-                <Image
-                  src="/images/6.jpg"
-                  alt="Paul"
-                  width={112}
-                  height={112}
-                  className="object-cover w-full h-full"
-                />
+        <div
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm overflow-y-auto flex justify-center items-start z-50 p-4"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="bg-white border-4 border-gray-600 rounded-[70px] p-8 pr-4 max-w-xl w-full relative shadow-lg max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="overflow-y-scroll max-h-[75vh] pr-4 custom-scrollbar">
+              {/* Top Row */}
+              <div className="flex items-start justify-between mb-4 gap-4">
+                <div className="flex flex-col md:flex-row text-left sm:text-center w-full">
+                  <div className="w-28 h-28 rounded overflow-hidden flex-shrink-0">
+                    <Image
+                      src="/images/paul.jpg"
+                      alt="Paul Epstein"
+                      width={112}
+                      height={112}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-center pl-0 md:pl-18 mt-4 md:mt-0">
+                    <h2 className="text-lg font-semibold text-gray-800">
+                      Paul Epstein
+                    </h2>
+                    <p className="text-sm text-gray-600">CEO, Founder</p>
+                    <p className="text-sm text-gray-600">
+                      H6FIT Venture Studio
+                    </p>
+                  </div>
+                </div>
+
+                {/* Close Button */}
+                <button
+                  onClick={() => setShowModal(false)}
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                >
+                  Close
+                </button>
               </div>
 
-              {/* Title */}
-              <h2 className="text-lg font-semibold text-gray-800 text-center md:text-left">
-                About Paul
-              </h2>
-
-              {/* Close Button */}
-              <button
-                onClick={() => setShowModal(false)}
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-              >
-                Close
-              </button>
-            </div>
-
-            {/* Full Description */}
-            <div className="text-sm text-gray-700 whitespace-pre-line">
-              <div>
+              {/* Full Description */}
+              <div className="text-sm text-gray-700 whitespace-pre-line">
+                {/* You can paste the full long description here or import it from a separate file */}
                 <strong>
                   {" "}
-                  My Heart Built H6FIT: My 20-Year Journey from Near Death to a
+                  My Heart Built H6FIT: My 15-Year Journey from Near Death to a
                   New Life Economy
                 </strong>
                 <br />
@@ -89,7 +101,7 @@ const SideCard = () => {
                 life. That’s how dire things had become. In early 2007, on what
                 was meant to be a healing vacation, I could barely walk across a
                 hotel room. When I returned home, I begged my primary care
-                doctor for an angiogram. He refuse <br />
+                doctor for an angiogram. He refused. <br />
                 <br /> So, I found another doctor. A cardiologist. He compared
                 two EKGs and saw something everyone else had missed. The
                 angiogram revealed a 90% blockage in my left anterior descending
@@ -137,13 +149,14 @@ const SideCard = () => {
                 a protocol, a full-fledged inversion of sick-care. But I had to
                 relocate. California’s regulatory environment was too hostile
                 toward holistic care, so I moved to Florida, met like-minded
-                practitioners, and began architecting a new health economy.{" "}
+                practitioners, and began architecting a new health economy.
                 <br />
                 <br />
                 <strong>The Second Life Saved</strong>
-                <br /> In 2017, despite my wellness regimen, something still
-                wasn’t right. A forward-thinking doctor, Dr. J., recognized what
-                others missed: a second artery was failing. He referred me to an
+                <br />
+                In 2017, despite my wellness regimen, something still wasn’t
+                right. A forward-thinking doctor, Dr. J., recognized what others
+                missed: a second artery was failing. He referred me to an
                 integrative cardiologist who scheduled a double bypass, a LIMA.
                 I was told the procedure could extended my life by another 30 to
                 40 years. Nice! <br />
@@ -210,22 +223,23 @@ const SideCard = () => {
                 <br />
                 <strong> A Bit About Me…</strong>
                 <br /> I’ve been told I am a visionary. I prefer imagineer. Why?
-                Because, according to my early in life hero, Walt Disney, he
-                said that “an imagineer is someone who is skilled in creative
-                ideas and turning them into practical form.” That’s where it all
+                Because, according to my early in life hero, Walt Disney, said
+                that “an imagineer is someone who is skilled in creative ideas
+                and turning them into practical form.” That’s where it all
                 started for me. <br />
                 <br /> With 15 years of experience in healthcare innovation and
                 over three decades in internet strategy and digital
-                transformation, I’ve built an amazing team of dedicated
-                physicians, academicians, researchers, health professionals, and
-                business executives who have helped built H6FIT Wellcare into
-                what it is today. <br />
-                <br /> For the last 27 years, I’ve specialized in designing
-                virtual, life-like, biophilic web-based ecosystems that deliver
-                measurable and life-enhancing outcomes. <br />
+                transformation, with an amazing team of dedicated physicians,
+                academicians, researchers, health professionals, and business
+                executives, we built H6FIT Wellcare into what it is today.{" "}
+                <br />
+                <br /> For the last 27 years, I’ve specialized in designing and
+                developing virtual, life-like, biophilic web- based ecosystems
+                that deliver measurable and life-enhancing outcomes.
+                <br />
                 <br /> In May 2023, we expanded our team expertise into AI and
-                machine learning, integrating these technologies into his
-                groundbreaking work in healthcare. As the founder of H6FIT, I’ve
+                machine learning, integrating these technologies into
+                groundbreaking work in Wellcare. As the founder of H6FIT, I’ve
                 pioneered a well-being economy that combines virtual care health
                 tech, marketing and management, digital human avatars, and
                 tokenized incentives with advanced six key drivers of holistic

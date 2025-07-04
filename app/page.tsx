@@ -40,7 +40,7 @@ export default function Home() {
 
             <div className="w-full rounded overflow-hidden mb-6 ml-6">
               <Image
-                src="/images/register.png"
+                src="/images/candise.png"
                 alt="paul"
                 width={400}
                 height={180}

@@ -1,6 +1,6 @@
 export const data = [
   {
-    image: "/images/1.png",
+    image: "/images/article1.png",
     tag: ["#FunctionalMedicine", "#AIInWellcare"],
     Title: "A $10,000 AI System for Just $697",
     Date: "Vishu • June 19, 2025",
@@ -61,11 +61,11 @@ This is the reset button you’ve been waiting for. Click here to take advantage
 Wellcare AI Sandbox Summit before the spots fill up: www.h6fitsummits.com.`,
   },
   {
-    image: "/images/3.jpg",
+    image: "/images/article2.jpg",
     tag: ["#AIFortHealers", "#FunctionalFuture"],
     Title: "AI Has Ignored Holistic Healers Until Now",
     Date: "Paul • June 21, 2025",
-    Desc: "Why Doctors & Nurses are finally getting their tools...",
+    Desc: "Why practitioners are finally getting their tools...",
     FullDesc: `**Why Licensed Functional and Integrative Practitioners Finally Have a System of
 Their Own**<br>
 AI has been poured into traditional healthcare systems, billing workflows, and administrative
@@ -126,7 +126,7 @@ and scale.<br><br>
 Click here to join the H6FIT Wellcare AI Sandbox Summit: www.h6fitsummits.com`,
   },
   {
-    image: "/images/2.png",
+    image: "/images/article3.png",
     tag: ["#VirtualCareTeam", "#AICompanions"],
     Title: "Meet Your Wellcare Team",
     Date: "Paul • June 21, 2025",
@@ -178,7 +178,7 @@ EVA, Candise, and Gwen are ready to work for you.<br><br>
 Join the Wellcare AI Sandbox Summit on August 27: www.h6fitsummits.com`,
   },
   {
-    image: "/images/4.png",
+    image: "/images/article4.png",
     tag: ["#TrustDrivenTech", "#PractitionerBuilt"],
     Title: "$2M Rooted In Practitioner Feedback",
     Date: "Vishu • June 19, 2025",
@@ -186,11 +186,129 @@ Join the Wellcare AI Sandbox Summit on August 27: www.h6fitsummits.com`,
     FullDesc: ``,
   },
   {
-    image: "/images/7.png",
+    image: "/images/article5.png",
     tag: ["#WellcareAutomation", "#AIPfofitSystem"],
-    Title: "Your Revenue On Autopilot",
+    Title: "Your Virtual Practice - Revenue On Autopilot",
     Date: "Shane • June 20, 2025",
     Desc: "A practice model you control...",
-    FullDesc: ``,
+    FullDesc: `Your Virtual Practice. Your AI Team. Your Systemic Growth Engine.<br><br>
+    You became a practitioner to change lives. You changed your career to eliminate burnout. As a
+patient, I burned out too, was told there was no hope. In 2010, I found the answer in Holistic,
+Functional &amp; Integrative Therapeutics. And, 15 years later, I am still here.<br><br>
+As an entrepreneur, a technologist, web developer, marketer, and financier, I decided to give back.
+Over the last 11 years, I invested $2 million. We conducted deep R&amp;D, tested revenues, trained
+physicians, developed consumer memberships, delivered RPM services, and now AI-centric. I built an
+elegant solution: a virtual, life-like,**H6FIT ‘Wellcare Omniverse’** in honor of those who serve
+clients and patients, and consumers seeking an alternative to sick care.<br><br>
+I’ve also developed the **H6FIT Wellcare AI Sandbox Summit.** It is built to give you the most
+powerful, low-cost, high-leverage, autonomous system ever created for holistic practitioners.<br><br>
+**Why the Sandbox Matters**<br>
+Most platforms are built in a vacuum, then sold to you after the fact. H6FIT turns that upside down.
+When you join our Sandbox Summit, you don’t just use the platform, you help shape it.<br><br>
+For the first time, practitioners like you are invited to co-create the tools, experiences, and systems
+you’ll actually use. Your voice is heard not after, but before and during our iterative growth. This isn’t
+top-down development, it’s a movement, and an uprising that includes you, and you’re at the center.<br><br>
+This H6FIT Wellcare Omniverse is a unified multifaceted system built to work for you and with you,
+not the other way around.<br><br>
+**The Augmented Practice: Virtual. Life-like. Profitable. Autonomous. Well Positioned.**<br>
+This isn’t about replacing your practice. It’s about augmenting it with a full AI-powered infrastructure
+designed to help you scale, without compromise.<br><br>
+This isn’t a system: It’s an AI-powered, practitioner-first infrastructure, designed to think, move, and
+evolve with you. Systems automate tasks. The Sandbox Collective does more: It amplifies your
+practice across every dimension: patient acquisition, onboarding, instruction, follow-up, and revenue
+generation.<br><br>
+What makes it revolutionary? You’re not just using the AI; you’re co-creating it. Inside the Sandbox,
+together we shape how EVA teaches; we guide how Candise recruits; we influence how Gwen
+supports and sells.<br><br>
+This is not software. We’re building a sentient support team crafted by and for the very practitioners
+who will use it. And that changes everything.<br><br>
+Here’s how it works: Our support system includes a built-in AI-powered onboarding, instructive
+member protocol, and client services delivered by:<br><br>
+**1. Candise: AI Patient Acquisition + Onboarding + Leads That Pay You***<br>
+Candise is your AI Business Development Agent. She acts like your digital marketing, sales, and pre-
+qualification team, all in one. Candise builds the relationship before they ever meet you.<br>
+ • Recruits and pre-registers new members<br>
+ • Guides each person through a Health Risk Assessment (HRA), wellness goals, and symptoms<br>
+ •  Aligns them with your practice philosophy and services<br>
+ • You don’t pay for leads! H6FIT pays you. You receive an onboarding fee per qualified member
+in your region.<br><br>
+This is not generic content, it’s a structured, instructive overlay. Candise walks each member through
+a Health Risk Assessment (HRA), explores their goals, and prepares them for the kind of personalized
+care only you can deliver.<br><br>
+**2. EVA: AI Patient Education + Protocol Delivery**<br>
+EVA is your Evidence-based Virtual Advisor. She delivers a complete Systemic Patient Instruction
+Protocol: automated, structured, and personalized.<br>
+ • Teaches your patients the Six Key Drivers of Wellcare:<br>
+ ✔️  Mind Health<br> ✔️ Functional Nutrition <br>✔️ Medical Fitness<br>
+ ✔️  Vitality Supplements <br>✔️ Natural Hormone Balancing<br> ✔️ Advanced Diagnostics<br>
+ •  Guides them through lifestyle transformation, labs, supplements, and protocols
+ •  Delivers yearlong education via a virtual, human-like interaction
+ •  Prepares every member for the real work you do <br>
+ By the time a member/patient comes to you, they’re <u>signed-up, pre-qualified, educated, and fully
+engaged.</u> They’re ready to invest in themselves, not just inquire. That’s a game-changer.<br><br>
+**3. GWEN: AI Client Services + Revenue Activation**<br>
+Gwen is your AI Client Success Manager and post-marketing agent. She keeps members engaged
+long after their first consult.<br>
+• Handles nudges, retention, scheduling, and escalation<br>
+• Answers follow-up questions with care<br>
+• Manages sales of supplements, labs, and digital tools<br>
+• Opens space for you to step in with high-value services<br>
+You earn <u>ongoing ancillary revenue.</u> You gain **more opportunities** for consults and therapeutic
+interventions. Gwen ensures no member falls through the cracks.<br><br>
+**A Broader Audience. A Smarter System**<br>
+Because your patient teaching protocol is handled by AI, you can now attract a wider, more diverse
+patient base. Our AI-system can support 1,000+ members per practitioner while maintaining high
+engagement and adherence. It&#39;s low cost, autonomous, and profitable.<br><br>
+Instead of buying leads, you’ll receive a base fee per year per member, routed to your practice for
+each member patient in your local area. On top of that, you’ll share in revenue from:<br>
+• Supplement subscriptions<br>
+• Diagnostic labs<br>
+• Wellness coaching<br>
+• Wearables and monitoring tools<br>
+• Additional digital services<br>
+• Your patient fee for service<br><br>
+And when a member needs escalated care, you step in. Whether it&#39;s telehealth, in-person consults, or
+treatment planning, EVA, Candise, and Gwen do the prep. You do what only a human practitioner can
+do.<br><br>
+**What Makes It Different?**<br>
+H6FIT isn’t another website or marketing tool. It’s a fully integrated Virtual, life-like, Wellcare
+Ecosystem grounded in Web 4.0 technology, immersive design, and a biophilic engaging and
+persuasive habitat of health and well-being. It feels alive. And it works.<br><br>
+Your AI agents handle:<br>
+• Patient recruitment, conversion, and onboarding<br>
+• Wellcare instruction and follow-up<br>
+• Scheduling, intervention and escalation when necessary<br>
+• and retention<br>
+You handle care. Together, it’s an <u>unstoppable model.</u><br><br>
+**This Is How Real Wellcare Scales**<br>
+The days of piecemeal practice building are over. With H6FIT, you finally get:<br>
+✔ Predictable revenue<br>
+✔ Scalable infrastructure<br>
+✔ pre-educated member/patients<br>
+✔ Revenue-sharing opportunities<br>
+✔ The ability to streamline your practice<br><br>
+**Ready to Add An Autopilot, AI-Driven Practice To Your Practice?**<br>
+Click here to reserve your AI-powered Virtual Practice Center and secure your seat at the Summit:
+www.h6fitsummits.com<br><br>
+**Here’s What You’ll Get for $697**<br>
+✔ A virtual, life-like practice center to use immediately (valued at $2,500+)<br>
+✔ A full AI-powered team (EVA, Candise, and Gwen) to run your back-end<br>
+✔ Instant access to H6FIT’s foundational patient tutorial protocol<br>
+✔ Invitation to join the H6FIT Wellcare AI Sandbox Summit. You become a member of the
+Sandbox Collective that gives you a fully operational, scalable platform, plus, an opportunity to
+co-create the future of AI-powered Wellcare. Your voice will make a difference!<br><br>
+**Join Us and Become Part of The Sandbox Collective:** www.h6fitsummits.com
+
+You’re not just upgrading your practice.
+
+You’re stepping into a future of Wellcare that was built for you.
+
+
+
+
+
+
+
+    `,
   },
 ];

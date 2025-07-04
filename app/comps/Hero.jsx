@@ -84,7 +84,7 @@ const Hero = () => {
           Finally--AI Built for Real Healers
         </p>
         <p className="italic">
-          A New Path for Functional, Integrative, and Root-Cause Practitioners.
+          A New Path for Functional, Integrative, and Root-Cause Practitioners
         </p>
       </div>
     </div>
