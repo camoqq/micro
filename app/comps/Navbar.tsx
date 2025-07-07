@@ -16,7 +16,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo or Title */}
         <h1 className="text-lg font-bold">
-          <Link href="/">H6FIT SANDBOX SUMMIT</Link>
+          <Link href="/">H6FIT Wellcare AI Sandbox Summit</Link>
         </h1>
 
         {/* Desktop Menu */}
